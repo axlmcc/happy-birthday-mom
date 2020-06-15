@@ -33,7 +33,7 @@ function init() {
     document.body.appendChild( renderer.domElement );
 
     loader.load(
-        '../assets/models/giraffe.gltf',
+        './assets/models/giraffe.gltf',
         function( gltf ) {
             // https://stackoverflow.com/a/52271526
             var mroot = gltf.scene;
