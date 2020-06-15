@@ -5,9 +5,10 @@
   "author": "Axl McCracken <axl.mccracken@gmail.com>",
   "private": true,
   "scripts": {
-    "build:dev": "parcel index.html --hmr-port 37985",
-    "build:prod": "parcel build index.html",
-    "clean": "rm -rf dist/*"
+    "build:dev": "parcel src/index.html --hmr-port 37985",
+    "build:prod": "parcel build src/index.html --public-url ./",
+    "clean": "rm -rf dist/*",
+    "deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
     "three": "^0.117.1"
