@@ -1,0 +1,33 @@
+{
+  "name": "mom_birthday_card",
+  "version": "1.0.0",
+  "description": "Sorry it's late! Hope you enjoy it :)",
+  "author": "Axl McCracken <axl.mccracken@gmail.com>",
+  "private": true,
+  "scripts": {
+    "build:dev": "parcel index.html --hmr-port 37985",
+    "build:prod": "parcel build index.html",
+    "clean": "rm -rf dist/*"
+  },
+  "dependencies": {
+    "three": "^0.117.1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-static-files-copy": "^2.4.3",
+    "sass": "^1.26.8"
+  },
+  "staticFiles": {
+    "staticPath": [
+      {
+        "staticPath": "src/assets/models",
+        "staticOutDir": "assets/models"
+      },
+      {
+        "staticPath": "src/assets/textures",
+        "staticOutDir": "assets/textures"
+      }
+    ],
+    "watcherGlob": "**"
+  }
+}
