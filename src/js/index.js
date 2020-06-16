@@ -32,7 +32,7 @@ function init() {
     scene.add(ambientLight);
     camera.add(pointLight);
 
-    camera.position.z = 2;
+    camera.position.z = 2.5;
     camera.position.y = 0.25;
 
     renderer.outputEncoding = THREE.sRGBEncoding;
