@@ -8,7 +8,7 @@
     "build:dev": "parcel src/index.html --hmr-port 37985",
     "build:prod": "parcel build src/index.html --public-url ./",
     "clean": "rm -rf dist/*",
-    "deploy": "yarn run clean && yarn run build:prod && git subtree push --prefix dist origin gh-pages"
+    "deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
     "three": "^0.117.1"
