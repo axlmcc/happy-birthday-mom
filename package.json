@@ -11,9 +11,13 @@
     "deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1",
     "three": "^0.117.1"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-static-files-copy": "^2.4.3",
     "sass": "^1.26.8"

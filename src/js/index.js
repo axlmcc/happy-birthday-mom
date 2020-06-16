@@ -1,6 +1,11 @@
-import '../styles/main.scss';
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.css';
+import '@fortawesome/fontawesome-free/css/all.css';
+
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+
+import '../styles/main.scss';
 
 var camera, scene, renderer, loader, material;
 
